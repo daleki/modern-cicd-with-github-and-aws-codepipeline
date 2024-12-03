@@ -21,6 +21,4 @@ phases:
 
   post_build:
     commands:
-      - aws cloudformation describe-stacks --stack-name BaseInfraStack-$DEPLOY_ENVgit add .
-git commit -m "Added Backend BuildSpec"
-git push
+      - aws cloudformation describe-stacks --stack-name BaseInfraStack-$DEPLOY_ENV
